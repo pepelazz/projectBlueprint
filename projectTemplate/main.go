@@ -23,6 +23,8 @@ func getProject() t.ProjectType {
 	// названием базы маленькими буквами, без пробелов
 	p.Config.Postgres = t.PostrgesConfig{"db_name", 5646, "ktulhu77", "Asia/Novosibirsk"}
 	p.Config.WebServer = t.WebServerConfig{ 3091, "https://example.ru", "/home/deploy/projectName", "85.210.890.567", "root"}
+	// TODO: надо прописать настройки почтового сервера для отправки email
+	//Например, p.Config.Email = types.EmailConfig{"info@mail.ru", "password", "smtp.mail.ru", 465, "CompanyName"}
 	p.Config.Email = t.EmailConfig{ "CompanyName"}
 	p.Config.Logo = "https://cdn.pixabay.com/photo/2017/05/05/00/15/kokopelli-2285538_960_720.png"
 	// формируем routes для Vue
