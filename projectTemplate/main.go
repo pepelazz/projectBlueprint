@@ -18,7 +18,6 @@ func getProject() t.ProjectType {
 		Docs: []t.DocType {
 			legalEntity.GetDoc(),
 		},
-		Config: t.ProjectConfig{LocalProjectPath: "github.com/pepelazz/projectBlueprint/src"},
 	}
 	// названием базы маленькими буквами, без пробелов
 	p.Config.Postgres = t.PostrgesConfig{"db_name", 5646, "ktulhu77", "Asia/Novosibirsk"}
