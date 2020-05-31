@@ -41,8 +41,10 @@ func getProject() t.ProjectType {
 	p.FillSideMenu()
 
 	// копируем файлы проекта (которые не шаблоны)
-	err := copy.Copy("./sourceFiles", "../")
-	utils.CheckErr(err, "Copy sourceFiles")
+	if _, err := os.Stat("./sourceFiles"); !os.IsNotExist(err) {
+		err := copy.Copy("./sourceFiles", "../")
+		utils.CheckErr(err, "Copy sourceFiles")
+	}
 
 	return *p
 }
