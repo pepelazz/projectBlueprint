@@ -6,10 +6,12 @@ import (
 )
 
 const (
-	name            = "legal_entity"
-	name_ru         = "юрЛица"
-	name_ru_plural  = "юрЛица"
-	menu_icon       = "https://image.flaticon.com/icons/svg/469/469323.svg"
+	name           = "legal_entity"
+	name_ru        = "юрЛица"
+	name_ru_plural = "юрЛица"
+	// файл с иконкой сохранить в директорию projectTemplate/sourceFiles/src/webClient/src/statics/image/legal_entity_icon.svg
+	// скачать можно с ресурса https://www.flaticon.com/
+	menu_icon       = "statics/image/legal_entity_icon.svg"
 	breadcrumb_icon = "far fa-file-alt"
 )
 
