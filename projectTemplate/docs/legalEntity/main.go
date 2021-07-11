@@ -9,14 +9,15 @@ const (
 	name           = "legal_entity"
 	name_ru        = "юрЛица"
 	name_ru_plural = "юрЛица"
-	// файл с иконкой сохранить в директорию projectTemplate/sourceFiles/src/webClient/src/statics/image/legal_entity_icon.svg
+	// файл с иконкой сохранить в директорию projectTemplate/sourceFiles/src/webClient/public/image/legal_entity_icon.svg
 	// скачать можно с ресурса https://www.flaticon.com/
-	menu_icon       = "statics/image/legal_entity_icon.svg"
+	menu_icon       = "image/legal_entity_icon.svg"
 	breadcrumb_icon = "far fa-file-alt"
 )
 
-func GetDoc() t.DocType {
+func GetDoc(project *t.ProjectType) t.DocType {
 	doc := t.DocType{
+		Project:    project,
 		Name:       name,
 		NameRu:     name_ru,
 		PathPrefix: "docs",

@@ -16,9 +16,11 @@ func main() {
 func getProject() t.ProjectType {
 	p := &t.ProjectType{
 		Name: "CompanyName",
-		Docs: []t.DocType{
-			legalEntity.GetDoc(),
-		},
+	}
+	p.Config.Vue.QuasarVersion = 2
+
+	p.Docs = []t.DocType{
+		legalEntity.GetDoc(p),
 	}
 	// названием базы маленькими буквами, без пробелов
 	p.Config.Postgres = t.PostrgesConfig{"db_name", 5646, "xvzDV4curLidx8IWZJ6czDHQ1qa7wjfL", "Asia/Novosibirsk"}
