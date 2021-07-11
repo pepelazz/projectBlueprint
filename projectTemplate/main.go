@@ -38,7 +38,6 @@ func getProject() t.ProjectType {
 		{Url: "users", Text: "Пользователи", Icon: "https://image.flaticon.com/icons/svg/423/423063.svg", Roles: []string{utils.RoleAdmin}},
 		{DocName: "legal_entity"},
 		{Text: "Справочники", Icon: "https://image.flaticon.com/icons/svg/1643/1643260.svg", IsFolder: true, LinkList: []t.VueMenu{{DocName: "legal_entity"}}},
-		{Text: "Задачи", Icon: "https://image.flaticon.com/icons/svg/1642/1642808.svg", IsFolder: true, LinkList: []t.VueMenu{{Text: "Список задач", Url: "task"}, {Text: "Типы задач", Url: "taskType"}}},
 	}
 	p.FillSideMenu()
 
