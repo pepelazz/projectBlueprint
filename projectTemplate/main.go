@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	projectGenerator.Start(getProject(), nil)
+	nla_framework.Start(getProject(), nil)
 }
 
 func getProject() t.ProjectType {
