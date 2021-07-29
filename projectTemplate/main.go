@@ -4,8 +4,8 @@ import (
 	"github.com/otiai10/copy"
 	"github.com/pepelazz/projectBlueprint/projectTemplate/docs/legalEntity"
 	"github.com/pepelazz/projectBlueprint/projectTemplate/utils"
-	"github.com/pepelazz/projectGenerator"
-	t "github.com/pepelazz/projectGenerator/types"
+	"github.com/pepelazz/nla_framework"
+	t "github.com/pepelazz/nla_framework/types"
 	"os"
 )
 
