@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/otiai10/copy"
-	"github.com/pepelazz/projectBlueprint/projectTemplate/docs/legalEntity"
-	"github.com/pepelazz/projectBlueprint/projectTemplate/utils"
+	"github.com/[[path_to_project_direvtory]]/projectTemplate/docs/legalEntity"
+	"github.com/[[path_to_project_direvtory]]/projectTemplate/utils"
 	"github.com/pepelazz/nla_framework"
 	t "github.com/pepelazz/nla_framework/types"
 	"os"
