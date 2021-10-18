@@ -18,6 +18,7 @@ func getProject() t.ProjectType {
 		Name: "CompanyName",
 	}
 	p.Config.Vue.QuasarVersion = 2
+	p.FillI18n()
 
 	p.Docs = []t.DocType{
 		legalEntity.GetDoc(p),
