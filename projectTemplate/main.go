@@ -38,7 +38,7 @@ func getProject() t.ProjectType {
 		//{DocName: "client_order"},
 		{Url: "users", Text: "Пользователи", Icon: "https://image.flaticon.com/icons/svg/423/423063.svg", Roles: []string{utils.RoleAdmin}},
 		{DocName: "legal_entity"},
-		{Text: "Справочники", Icon: "https://image.flaticon.com/icons/svg/1643/1643260.svg", IsFolder: true, LinkList: []t.VueMenu{{DocName: "legal_entity"}}},
+		{Text: "Справочники", Icon: "image/directory.png", IsFolder: true, LinkList: []t.VueMenu{{DocName: "legal_entity"}}},
 	}
 	p.FillSideMenu()
 
