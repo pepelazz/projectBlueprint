@@ -24,8 +24,8 @@ func getProject() t.ProjectType {
 		legalEntity.GetDoc(p),
 	}
 	// названием базы маленькими буквами, без пробелов
-	p.Config.Postgres = t.PostrgesConfig{"db_name", 5646, "xvzDV4curLidx8IWZJ6czDHQ1qa7wjfL", "Asia/Novosibirsk"}
-	p.Config.WebServer = t.WebServerConfig{3091, "https://example.ru", "/home/deploy/projectName", "85.210.890.567", "root"}
+	p.Config.Postgres = t.PostrgesConfig{DbName: "db_name", Port: 5646, Password: "xvzDV4curLidx8IWZJ6czDHQ1qa7wjfL", TimeZone: "Asia/Novosibirsk"}
+	p.Config.WebServer = t.WebServerConfig{Port: 3091, Url: "https://example.ru", Path: "/home/deploy/projectName", Ip: "85.210.890.567", Username: "root"}
 	// TODO: надо прописать настройки почтового сервера для отправки email
 	p.Config.Email = t.EmailConfig{Sender: "info@mail.ru", Password: "password", Host: "smtp.mail.ru", Port: 465, SenderName: "CompanyName"}
 	p.Config.Logo = "https://cdn.pixabay.com/photo/2017/05/05/00/15/kokopelli-2285538_960_720.png"
