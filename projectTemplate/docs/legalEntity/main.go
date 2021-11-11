@@ -35,7 +35,7 @@ func GetDoc(project *t.ProjectType) t.DocType {
 			Roles:          []string{},
 		},
 		//Templates:   map[string]*t.DocTemplate{"webClient_item.vue": {},},
-		IsBaseTemplates: t.DocIsBaseTemplates{true, true},
+		IsBaseTemplates: t.DocIsBaseTemplates{Vue: true, Sql: true},
 		Sql: t.DocSql{
 			IsSearchText:    true,
 			IsBeforeTrigger: true,
