@@ -28,7 +28,7 @@ func getProject() t.ProjectType {
 	p.Config.WebServer = t.WebServerConfig{Port: 3091, Url: "https://example.ru", Path: "/home/deploy/projectName", Ip: "85.210.890.567", Username: "root"}
 	// TODO: надо прописать настройки почтового сервера для отправки email
 	p.Config.Email = t.EmailConfig{Sender: "info@mail.ru", Password: "password", Host: "smtp.mail.ru", Port: 465, SenderName: "CompanyName"}
-	p.Config.Logo = "https://cdn.pixabay.com/photo/2017/05/05/00/15/kokopelli-2285538_960_720.png"
+	p.Config.Logo = "https://i.pinimg.com/564x/05/57/1d/05571dac600004278124d12b5a567ddb.jpg"
 	// формируем routes для Vue
 	p.FillVueBaseRoutes()
 	p.Vue.UiAppName = "CompanyName"
@@ -36,7 +36,7 @@ func getProject() t.ProjectType {
 	// боковое меню для Vue
 	p.Vue.Menu = []t.VueMenu{
 		//{DocName: "client_order"},
-		{Url: "users", Text: "Пользователи", Icon: "https://image.flaticon.com/icons/svg/423/423063.svg", Roles: []string{utils.RoleAdmin}},
+		{Url: "users", Text: "Пользователи", Icon: "image/users.svg", Roles: []string{utils.RoleAdmin}},
 		{DocName: "legal_entity"},
 		{Text: "Справочники", Icon: "image/directory.png", IsFolder: true, LinkList: []t.VueMenu{{DocName: "legal_entity"}}},
 	}
